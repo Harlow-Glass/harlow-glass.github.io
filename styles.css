@@ -1,0 +1,220 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #1b1b1b;
+  color: #ffffff;
+}
+
+.blurred {
+  filter: blur(8px);
+  pointer-events: none;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(43, 43, 43, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.modal-content {
+  background: #2c2c2c;
+  padding: 2em;
+  text-align: center;
+  border-radius: 8px;
+  color: #ffffff;
+  width: 80%;
+  max-width: 400px;
+}
+
+.modal-image {
+  max-width: 100px;
+  margin-bottom: 1em;
+}
+
+.modal h1 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.modal-buttons button {
+  margin: 0.5em;
+  padding: 0.5em 1.5em;
+  border: none;
+  background: #7b00ff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.modal-buttons button:hover {
+  background: #a533ff;
+}
+
+.top-tab {
+  background: #1b1b1b;
+  text-align: center;
+  padding: 1em;
+}
+
+.tab-gif {
+  max-width: 100px;
+}
+
+.slideshow {
+  position: relative;
+  max-width: 800px;
+  margin: 2em auto;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #7b00ff;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  color: #a533ff;
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
+
+/* Horizontal Cards */
+.horizontal-cards {
+  display: flex;
+  justify-content: space-around;
+  padding: 2em;
+}
+
+.card {
+  text-align: center;
+  background: #2c2c2c;
+  padding: 1em;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.card p {
+  color: #7b00ff;
+}
+
+/* Featured Products */
+.featured-title {
+  text-align: center;
+  text-decoration: underline;
+  margin: 1em 0;
+}
+
+.product-list {
+  display: flex;
+  justify-content: space-around;
+  padding: 2em;
+}
+
+.product {
+  text-align: center;
+  background: #0e0b0b;
+  padding: 1em;
+  border-radius: 8px;
+}
+
+.buy-now {
+  background: #7b00ff;
+  border: none;
+  padding: 0.5em 1em;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.buy-now:hover {
+  background: #a533ff;
+}
+
+#faq-section {
+  background: #1b1b1b;
+  padding: 2em;
+  margin: 2em 0;
+  border-top: 2px solid #7b00ff;
+}
+
+.faq-title {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 1em;
+  text-decoration: underline;
+}
+
+.faq-item {
+  margin: 1em 0;
+  border-bottom: 1px solid #7b00ff;
+  padding: 0.5em 0;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+  color: #7b00ff;
+}
+
+.toggle-icon {
+  margin-right: 1em;
+  font-size: 1.5em;
+  color: #7b00ff;
+  transition: transform 0.3s ease;
+}
+
+.faq-answer {
+  color: #ffffff;
+  margin-left: 2.5em;
+  display: none;
+  line-height: 1.5;
+}
+

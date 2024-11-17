@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="age-verification" class="modal">
+    <div class="modal-content">
+      <img src="images/18.gif" alt="Are you 18?" class="modal-image">
+      <h1>Are you 18 or older?</h1>
+      <div class="modal-buttons">
+        <button id="yes-btn">Yes, I am 18</button>
+        <button id="no-btn">No</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="main-content" class="blurred">
+    <div class="top-tab">
+      <img src="images/gif.gif" alt="GIF" class="tab-gif">
+    </div>
+
+    <div class="slideshow">
+      <button class="arrow left" onclick="changeSlide(-1)">&#8249;</button>
+      <div class="slides">
+        <img src="images/slide1.jpg" class="slide" alt="Slide 1">
+        <img src="images/slide2.png" class="slide" alt="Slide 2">
+        <img src="images/slide3.png" class="slide" alt="Slide 3">
+      </div>
+      <button class="arrow right" onclick="changeSlide(1)">&#8250;</button>
+    </div>
+
+    <section class="horizontal-cards">
+      <div class="card">
+        <img src="images/Discreet.png" alt="Card 1">
+        <p>Discreet Shipping</p>
+      </div>
+      <div class="card">
+        <img src="images/handled.png" alt="Card 2">
+        <p>Handled With Care</p>
+      </div>
+      <div class="card">
+        <img src="images/WorldWide.png" alt="Card 3">
+        <p>World Wide Shipping</p>
+      </div>
+      <div class="card">
+        <img src="images/Verified.png" alt="Card 4">
+        <p>Harlow Approved</p>
+      </div>
+    </section>
+
+    <h2 class="featured-title">Featured Products</h2>
+    <section class="product-list">
+      <div class="product">
+        <img src="images/product1.png" alt="Product 1">
+        <p>Harlows Muzzer</p>
+        <p class="price">$30.00</p>
+        <a href="https://buy.stripe.com/3cs182aFd1Xi9gs9AA">
+            <button class="buy-now">Buy Now!</button>
+        </a>
+    </div>
+      <div class="product">
+        <img src="images/product2.png" alt="Product 2">
+        <p>Harlow's Dispo Vape</p>
+        <p class="price">$35.00</p>
+        <a href="https://buy.stripe.com/00g6sm4gP9pKeAMaEF">
+            <button class="buy-now">Buy Now!</button>
+        </a>
+    </div>
+      <div class="product">
+        <img src="images/product3.png" alt="Product 3">
+        <p>Harlow's Hello Kitty Bong</p>
+        <p class="price">$50.00</p>
+        <a href="https://buy.stripe.com/9AQcQK6oXatOeAM002">
+            <button class="buy-now">Buy Now!</button>
+        </a>
+    </div>
+    </section>
+  </div>
+
+  <section id="faq-section">
+    <h2 class="faq-title">Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <div class="faq-question">
+        <span class="toggle-icon">+</span> Who is Harlow?
+      </div>
+      <div class="faq-answer">Harlow is our mascot, and the owner of this whole company and also, a british bulldog.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        <span class="toggle-icon">+</span> How long does shipping take?
+      </div>
+      <div class="faq-answer">Depending on the product it could take from 2 weeks to 5 months but it shouldnt take long.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        <span class="toggle-icon">+</span> Are international orders available?
+      </div>
+      <div class="faq-answer">Yes, we ship internationally to most countries.</div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
