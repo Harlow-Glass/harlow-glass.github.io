@@ -1,4 +1,5 @@
 
+
 * {
   margin: 0;
   padding: 0;
@@ -218,3 +219,77 @@ body {
   line-height: 1.5;
 }
 
+@media (max-width: 768px) {
+
+  .horizontal-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .horizontal-cards .card {
+    width: 90%;
+    margin-bottom: 1em;
+  }
+
+  .product-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .product-list .product {
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 1em;
+  }
+
+  .slideshow {
+    max-width: 100%;
+  }
+
+  .slides {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .slide {
+    width: 100%;
+    height: auto;
+  }
+
+  .arrow {
+    font-size: 1.5em;
+  }
+
+  .modal-content {
+    width: 90%;
+    padding: 1.5em;
+  }
+
+  .modal h1 {
+    font-size: 1.2em;
+  }
+
+  .modal-buttons button {
+    font-size: 0.9em;
+    padding: 0.6em 1.2em;
+  }
+
+  .faq-item, .featured-title, .faq-title {
+    font-size: 1em;
+    padding: 0.5em;
+  }
+
+  .faq-answer {
+    margin-left: 1em;
+  }
+
+  .tab-gif, .modal-image {
+    max-width: 80px;
+    margin: 0 auto;
+  }
+
+  .product, .faq-item {
+    padding: 1em;
+  }
+}
